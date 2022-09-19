@@ -1,3 +1,14 @@
+# Dependencies
+
+## Styled-componets:
+ - Library to use CSS-in-JS
+ - npm install styled-components
+
+ ## @types/styled-components
+ - Styled components definitions for typescript
+ - npm install @types/styled-components -D
+
+
 # Frontend Mentor - Interactive rating component
 
 ![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)
