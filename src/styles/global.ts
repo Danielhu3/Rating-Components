@@ -8,6 +8,7 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: 'Overpass', sans-serif;
     }
     html{
   font-size: 62.5%;
@@ -15,12 +16,12 @@ export default createGlobalStyle`
     body{
         background: hsl(216, 12%, 8%);
         font-size: 1.5rem;
-        font-family: 'Overpass', sans-serif;
         font-weight: 400;
         color: white;
     }
     .App{
        display: flex;
        justify-content: center;
+       align-items: center;
     }
 `

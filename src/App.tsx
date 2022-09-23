@@ -1,22 +1,31 @@
 import React from 'react';
 import GlobalStyle from './styles/global'
 
+import Card from './components/card/';
+import Image from './components/image/';
+import Title  from './components/title/';
+import Text  from './components/text/';
+import Button  from './components/button/';
+
+
 function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <p>sdksds</p>
+      <Card>
+        <Image />
+        <Title />
+        <Text />
+        <Button />
+      </Card>
     </div>
   );
 }
 /* 
- <!-- Rating state start -->
 
-  How did we do?
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
 
+ 
   1 2 3 4 5
 
   Submit
