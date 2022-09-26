@@ -9,5 +9,7 @@ export const Card = styled.div`
 
     padding: 1.6rem;
     border-radius: 2rem;
+
+    
     
 `
