@@ -6,6 +6,7 @@ import Image from './components/image/';
 import Title  from './components/title/';
 import Text  from './components/text/';
 import Button  from './components/button/';
+import Rating  from './components/rating/';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Image />
         <Title />
         <Text />
+        <Rating />
         <Button />
       </Card>
     </div>

@@ -1,5 +1,3 @@
 import styled from "styled-components";
 
-export const Rating = styled.form`
-
-`
+export const Label = styled.label``

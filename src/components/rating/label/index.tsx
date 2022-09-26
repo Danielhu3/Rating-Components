@@ -1,5 +1,5 @@
 import React from 'react'
-import { Radio } from './style'
+import { Label } from './style'
 
 type Props = {
     value: string;
@@ -7,7 +7,7 @@ type Props = {
 
 const index = ({value} : Props) => {
   return (
-    <Radio type='radio' name='rating-value' value={value} id={value}></Radio>
+    <Label htmlFor={value}>{value}</Label>
   )
 }
 
