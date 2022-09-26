@@ -2,12 +2,12 @@ import React from 'react'
 import { Label } from './style'
 
 type Props = {
-    value: string;
+    value: number;
 }
 
 const index = ({value} : Props) => {
   return (
-    <Label htmlFor={value}>{value}</Label>
+    <Label htmlFor={value.toString()}>{value}</Label>
   )
 }
 

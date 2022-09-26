@@ -4,25 +4,15 @@ import { Rating } from './style'
 import Radio  from './radio'
 import Label  from './label'
 const index = () => {
+
+  const ratingOptions = [1,2,3,4,5]
   return (
     <Rating>
-        <Label value='1' />
-        <Radio value='1' />
+      {ratingOptions.map((value)=><>
+        <Label value={value}></Label>
+        <Radio value={value}></Radio>
+      </>)}
 
-        <Label value='2' />
-        <Radio value='2' />
-        
-        <Label value='3' />
-        <Radio value='3' />
-
-        <Label value='4' />
-        <Radio value='4' />
-
-        <Label value='5' />
-        <Radio value='5' />
-        
-        
-       
     </Rating>
   )
 }
