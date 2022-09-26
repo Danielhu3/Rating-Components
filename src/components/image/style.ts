@@ -9,6 +9,6 @@ export const Image = styled.div`
     justify-content: center;
     align-items: center;
 
-    min-height: 2.5rem;
-    min-width: 2.5rem;
+    min-height: 3rem;
+    min-width: 3rem;
 `
