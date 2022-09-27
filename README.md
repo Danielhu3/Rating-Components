@@ -8,6 +8,9 @@
  - Styled components definitions for typescript
  - npm install @types/styled-components -D
 
+# Learned
+- I Learned that if you map response is envolved by a Fragment, to add a key you need to use the complete Fragment sintax:
+<img src='./src/screenshots/fragment.png'>
 
 # Frontend Mentor - Interactive rating component
 

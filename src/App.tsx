@@ -8,7 +8,6 @@ import Text  from './components/text/';
 import Button  from './components/button/';
 import Rating  from './components/rating/';
 
-
 function App() {
   return (
     <div className="App">
