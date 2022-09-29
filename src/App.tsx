@@ -9,15 +9,28 @@ import Button  from './components/button/';
 import Rating  from './components/rating/';
 
 function App() {
+  const [rated, setRated] = React.useState(false)
   return (
     <div className="App">
       <GlobalStyle />
       <Card>
+      {!rated ? 
+        <>
         <Image />
         <Title />
         <Text />
         <Rating />
         <Button />
+        </>
+      :
+      <>
+      <Image />
+        <Title />
+        <Text />
+      </>
+      
+      }
+        
       </Card>
     </div>
   );

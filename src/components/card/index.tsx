@@ -2,7 +2,7 @@ import React from 'react'
 import {Card} from './styles'
 
 type Props = {
-  children: JSX.Element[]
+  children: JSX.Element
 }
 
 const index = ({children} : Props) => {
