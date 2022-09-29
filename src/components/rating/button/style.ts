@@ -9,6 +9,9 @@ export const Button = styled.button`
     padding: 1rem;
     letter-spacing:0.2rem;
     cursor: pointer;
+    width: 100%;
+
+    grid-area: submit;
 
     &:hover{
         background-color: hsl(0, 0%, 100%);

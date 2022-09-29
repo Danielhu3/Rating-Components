@@ -5,7 +5,6 @@ import Card from './components/card/';
 import Image from './components/image/';
 import Title  from './components/title/';
 import Text  from './components/text/';
-import Button  from './components/button/';
 import Rating  from './components/rating/';
 
 function App() {
@@ -16,21 +15,18 @@ function App() {
       <Card>
       {!rated ? 
         <>
-        <Image />
-        <Title />
-        <Text />
-        <Rating />
-        <Button />
+          <Image />
+          <Title />
+          <Text />
+          <Rating setRated = {setRated}/>
         </>
       :
       <>
-      <Image />
+        <Image />
         <Title />
         <Text />
       </>
-      
-      }
-        
+      } 
       </Card>
     </div>
   );

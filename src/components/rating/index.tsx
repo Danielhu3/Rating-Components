@@ -3,15 +3,21 @@ import { Rating } from './style'
 
 import Radio  from './radio'
 import Label  from './label'
-const index = () => {
+import Button  from './button'
 
+type Props = {
+  setRated: React.Dispatch<React.SetStateAction<boolean>>
+}
+const index = ({setRated}: Props) => {
+  
   const ratingOptions = [1,2,3,4,5]
   return (
-    <Rating>
+    <Rating onSubmit={()=> setRated(true)}>
       {ratingOptions.map((value)=><React.Fragment key={value}>
         <Radio value={value}></Radio>
         <Label value={value} ></Label>
       </React.Fragment>)}
+      <Button />
     </Rating>
   )
 }
