@@ -5,6 +5,7 @@ import StarImage from './components/starImage';
 import Title  from './components/title/';
 import Text  from './components/text/';
 import Rating  from './components/rating/';
+import IllustrationImage from './components/illustrationImage/';
 
 function App() {
   const [rated, setRated] = React.useState(false)
@@ -23,8 +24,8 @@ function App() {
         </>
       :
       <>
-        <StarImage/>
-        <Title>Thank You</Title>
+        <IllustrationImage/>
+        <Title>Thank you!</Title>
         <Text>
           We appreciate you taking the time to give a rating. If you ever need more support, 
           don’t hesitate to get in touch!
