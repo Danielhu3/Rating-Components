@@ -2,12 +2,13 @@ import React from 'react'
 import {Card} from './styles'
 
 type Props = {
+  rated: boolean;
   children: JSX.Element
 }
 
-const index = ({children} : Props) => {
+const index = ({rated,children} : Props) => {
   return (
-    <Card>
+    <Card rated={rated}>
       {children}
     </Card>
   )

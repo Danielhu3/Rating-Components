@@ -1,8 +1,7 @@
 import React from 'react';
 import GlobalStyle from './styles/global'
-
 import Card from './components/card/';
-import Image from './components/image/';
+import StarImage from './components/starImage';
 import Title  from './components/title/';
 import Text  from './components/text/';
 import Rating  from './components/rating/';
@@ -12,10 +11,10 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <Card>
+      <Card rated={rated}>
       {!rated ? 
         <>
-          <Image rated={rated}/>
+          <StarImage/>
           <Title>How did we do?</Title>
           <Text>
             Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
@@ -24,7 +23,7 @@ function App() {
         </>
       :
       <>
-        <Image rated={rated}/>
+        <StarImage/>
         <Title>Thank You</Title>
         <Text>
           We appreciate you taking the time to give a rating. If you ever need more support, 

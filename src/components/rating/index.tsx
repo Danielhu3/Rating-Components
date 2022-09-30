@@ -11,6 +11,7 @@ type Props = {
 const index = ({setRated}: Props) => {
   
   const ratingOptions = [1,2,3,4,5]
+  
   return (
     <Rating onSubmit={()=> setRated(true)}>
       {ratingOptions.map((value)=><React.Fragment key={value}>
