@@ -15,16 +15,21 @@ function App() {
       <Card>
       {!rated ? 
         <>
-          <Image />
-          <Title />
-          <Text />
+          <Image rated={rated}/>
+          <Title>How did we do?</Title>
+          <Text>
+            Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+          </Text>
           <Rating setRated = {setRated}/>
         </>
       :
       <>
-        <Image />
-        <Title />
-        <Text />
+        <Image rated={rated}/>
+        <Title>Thank You</Title>
+        <Text>
+          We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!
+        </Text>
       </>
       } 
       </Card>
@@ -48,8 +53,7 @@ function App() {
 
   Thank you!
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+  
 
   <!-- Thank you state end -->
 */

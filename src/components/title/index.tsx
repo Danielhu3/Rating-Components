@@ -1,9 +1,12 @@
 import React from 'react'
 import { Title } from './style'
 
-const index = () => {
+type Props ={
+  children: string;
+}
+const index = ({children}: Props) => {
   return (
-    <Title>How did we do?</Title>
+    <Title>{children}</Title>
   )
 }
 
