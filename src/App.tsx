@@ -6,6 +6,7 @@ import Title  from './components/title/';
 import Text  from './components/text/';
 import Rating  from './components/rating/';
 import IllustrationImage from './components/illustrationImage/';
+import  Rated  from './components/rated/';
 
 function App() {
   const [rated, setRated] = React.useState(false)
@@ -25,6 +26,7 @@ function App() {
       :
       <>
         <IllustrationImage/>
+        <Rated />
         <Title>Thank you!</Title>
         <Text>
           We appreciate you taking the time to give a rating. If you ever need more support, 
@@ -49,7 +51,7 @@ function App() {
 
   <!-- Thank you state start -->
 
-  You selected <!-- Add rating here --> out of 5
+  
 
   Thank you!
 
