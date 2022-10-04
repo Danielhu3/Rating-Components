@@ -18,7 +18,7 @@ function App() {
         <>
           <StarImage/>
           <Title>How did we do?</Title>
-          <Text>
+          <Text rated={rated}>
             Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
           </Text>
           <Rating setRated = {setRated}/>
@@ -28,7 +28,7 @@ function App() {
         <IllustrationImage/>
         <Rated />
         <Title>Thank you!</Title>
-        <Text>
+        <Text rated={rated}>
           We appreciate you taking the time to give a rating. If you ever need more support, 
           don’t hesitate to get in touch!
         </Text>

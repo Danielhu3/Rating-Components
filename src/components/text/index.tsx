@@ -3,10 +3,11 @@ import { Text } from './style'
 
 type Props ={
   children: string;
+  rated: boolean;
 }
-const index = ({children} : Props) => {
+const index = ({children, rated} : Props) => {
   return (
-    <Text>{children}</Text>
+    <Text rated={rated}>{children}</Text>
   )
 }
 
