@@ -9,7 +9,8 @@ import IllustrationImage from './components/illustrationImage/';
 import  Rated  from './components/rated/';
 
 function App() {
-  const [rated, setRated] = React.useState(false)
+  const [rated, setRated] = React.useState(false);
+  const [rate, setRate] = React.useState('');
   return (
     <div className="App">
       <GlobalStyle />
@@ -21,7 +22,7 @@ function App() {
           <Text rated={rated}>
             Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
           </Text>
-          <Rating setRated = {setRated}/>
+          <Rating setRated = {setRated} setRate={setRate} rate={rate} />
         </>
       :
       <>
@@ -38,25 +39,4 @@ function App() {
     </div>
   );
 }
-/* 
-
-
-
- 
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  
-
-  Thank you!
-
-  
-
-  <!-- Thank you state end -->
-*/
 export default App;

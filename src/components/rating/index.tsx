@@ -6,19 +6,21 @@ import Label  from './label'
 import Button  from './button'
 
 type Props = {
-  setRated: React.Dispatch<React.SetStateAction<boolean>>
+  setRated: React.Dispatch<React.SetStateAction<boolean>>;
+  setRate: React.Dispatch<React.SetStateAction<string>>;
+  rate: string;
 }
-const index = ({setRated}: Props) => {
+const index = ({setRated, setRate, rate}: Props) => {
   
-  const ratingOptions = [1,2,3,4,5]
+  const ratingOptions = ['1','2','3','4','5']
   
   return (
-    <Rating onSubmit={()=> setRated(true)}>
+    <Rating>
       {ratingOptions.map((value)=><React.Fragment key={value}>
-        <Radio value={value}></Radio>
+        <Radio value={value} setRate={setRate}></Radio>
         <Label value={value} ></Label>
       </React.Fragment>)}
-      <Button />
+      <Button rate={rate} setRated={setRated}/>
     </Rating>
   )
 }
