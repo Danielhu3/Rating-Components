@@ -1,10 +1,12 @@
 import React from 'react'
 import { Rated } from './style'
 
-
-const index = () => {
+type Props ={
+  rate: string;
+}
+const index = ({rate}: Props) => {
   return (
-    <Rated>You selected 4 out of 5</Rated>
+    <Rated>You selected {rate} out of 5</Rated>
   )
 }
 

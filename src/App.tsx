@@ -27,7 +27,7 @@ function App() {
       :
       <>
         <IllustrationImage/>
-        <Rated />
+        <Rated rate={rate}/>
         <Title>Thank you!</Title>
         <Text rated={rated}>
           We appreciate you taking the time to give a rating. If you ever need more support, 
