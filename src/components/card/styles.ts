@@ -8,6 +8,8 @@ export const Card = styled.div.attrs((props: {rated: boolean}) => props)`
     gap: 1.6rem;
 
     padding: 1.6rem;
+    padding-bottom: 2.6rem;
+
     border-radius: 2rem;
 
     align-items: ${props => props.rated ?'center' :'unset'};
