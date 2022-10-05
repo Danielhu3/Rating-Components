@@ -25,4 +25,10 @@ export default createGlobalStyle`
        align-items: center;
        min-height: 100vh;
     }
+
+    @media screen and (max-width:560px) {
+        .App{
+            padding: 2rem;
+        }
+    }
 `
