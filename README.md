@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/Danielhu3/Rating-Components)
-- Live Site URL: [Click here](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://clever-syrniki-1bc03b.netlify.app/)
 
 ## My process
 
